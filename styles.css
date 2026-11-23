@@ -1,0 +1,20 @@
+:root{--bg:#0e1512;--card:#17211c;--line:#26352d;--tx:#e8efe9;--mu:#8da296;--ac:#4ade80;--in:#4ade80;--out:#fb7185;--warn:#fbbf24}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 "Segoe UI",system-ui,sans-serif;padding-bottom:78px}
+header{padding:calc(env(safe-area-inset-top) + 18px) 16px 6px}header small{color:var(--mu)}
+h1{margin:0;font:700 34px Georgia,serif;letter-spacing:-.5px}h3{margin:.2em 0 .6em}
+main{padding:8px 12px;max-width:640px;margin:auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid small,.mu{color:var(--mu)}.grid b{display:block;font-size:17px}
+button,select,input{font:inherit;color:var(--tx);background:#0b110e;border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+button{cursor:pointer}button.pri{background:var(--ac);color:#04210f;border:0;font-weight:700}button.sm{padding:4px 9px;font-size:13px}
+input,select{width:100%;margin:4px 0 10px}.filters{display:grid;grid-template-columns:1fr 1fr;gap:6px}.filters input,.filters select{margin:0}
+label{display:block;color:var(--mu);font-size:13px}a{cursor:pointer}
+.in{color:var(--in)}.out{color:var(--out)}.tag{font-size:12px;padding:2px 8px;border-radius:20px;border:1px solid var(--line);display:inline-block;margin:2px}
+.tag.settled{color:var(--in)}.tag.partial{color:var(--warn)}.tag.pending{color:var(--out)}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:right}td:first-child,th:first-child{text-align:left}
+.scroll{overflow-x:auto}.bar{height:8px;background:var(--out);border-radius:4px;margin-top:3px}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:#0b110e;border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;border:0;border-radius:0;background:none;color:var(--mu);padding:14px 4px}nav button.on{color:var(--ac);font-weight:700}
+dialog{background:none;border:0;padding:0;width:min(92vw,420px);color:var(--tx)}dialog::backdrop{background:#000a}
+pre{white-space:pre-wrap;font-size:11px;background:#0b110e;padding:8px;border-radius:8px}
